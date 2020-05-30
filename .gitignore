@@ -1,61 +1,13 @@
-01 - find pyramids - 11-5 [ok].ipynb
+__pycache__/*
+imagenes/*
+.ipynb_checkpoints/*
+*.npy
+*.csv
+*.tif
+*.png
+01 - find pyramids.ipynb
 02 - preparing widgets.ipynb
 02 - widgets.ipynb
-5-24 top 5kx.tif
-11-5 top 5kx.tif
-11-5 top 5kx.tif_scatter.npz.npy
-11-5 top 5kx.tif.npy
-11-5 top 5kx.tif.npz.npy
-13-7 top 5kx.tif
-17-503-69-2 top 5kx.tif
-17-503-69-9 top 5kx.tif
-17-503-69-12 top 5kx.tif
-17-503-69-16 top 5kx.tif
-39-31 top 5kx - piramid coords.npy
-39-31 top 5kx - pyramid coords.npy
-39-31 top 5kx - vertex coords.npy
-39-31 top 5kx- vertex module.csv
-39-31 top 5kx.tif
-39-58 top 5kx - pyramid coords.npy
-39-58 top 5kx - vertex coords.npy
-39-58 top 5kx- vertex module.csv
-39-58 top 5kx.tif
-39-65 top 5kx - pyramid coords.npy
-39-65 top 5kx - vertex coords.npy
-39-65 top 5kx- vertex module.csv
-39-65 top 5kx.tif
-39-70 top 5kx - pyramid coords.npy
-39-70 top 5kx - vertex coords.npy
-39-70 top 5kx- vertex module.csv
-39-70 top 5kx.tif
-40-77 top 5kx.tif
-2020_04_02 first result.png
+Untitled.ipynb
 cvtopo.py
 My Trip To The Pyramids.pptx
-Untitled.ipynb
-.ipynb_checkpoints/01 - find pyramids - 11-5 [ok]-checkpoint.ipynb
-.ipynb_checkpoints/01 - find pyramids - evolution [OK]-checkpoint.ipynb
-.ipynb_checkpoints/02 - preparing widgets-checkpoint.ipynb
-.ipynb_checkpoints/02 - widgets-checkpoint.ipynb
-.ipynb_checkpoints/Untitled-checkpoint.ipynb
-__pycache__/cvtopo.cpython-37.pyc
-__pycache__/cvtopo.cpython-38.pyc
-imagenes/39-31 top 5kx - find pyramids.png
-imagenes/39-31 top 5kx - Pyramid height.png
-imagenes/39-31 top 5kx - vertex coords.png
-imagenes/39-31 top 5kx - vertex stats.png
-imagenes/39-58 top 5kx - find pyramids.png
-imagenes/39-58 top 5kx - Pyramid height.png
-imagenes/39-58 top 5kx - vertex coords.png
-imagenes/39-58 top 5kx - vertex stats.png
-imagenes/39-65 top 5kx - find pyramids.png
-imagenes/39-65 top 5kx - Pyramid height.png
-imagenes/39-65 top 5kx - vertex coords.png
-imagenes/39-65 top 5kx - vertex stats.png
-imagenes/39-70 top 5kx - find pyramids.png
-imagenes/39-70 top 5kx - Pyramid height.png
-imagenes/39-70 top 5kx - vertex coords.png
-imagenes/39-70 top 5kx - vertex stats.png
-01 - find pyramids - 11-5 [ok].ipynb
-.ipynb_checkpoints/01 - find pyramids - 11-5 [ok]-checkpoint.ipynb
-.ipynb_checkpoints/01 - find pyramids - evolution [OK]-checkpoint.ipynb
