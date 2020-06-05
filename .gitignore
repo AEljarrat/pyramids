@@ -10,3 +10,6 @@ imagenes/*
 My Trip To The Pyramids.pptx
 
 !find_pyramids.ipynb
+!images/*.tif
+!results/*.npy
+!results/*.csv
