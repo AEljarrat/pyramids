@@ -5,9 +5,8 @@ imagenes/*
 *.csv
 *.tif
 *.png
-01 - find pyramids.ipynb
-02 - preparing widgets.ipynb
-02 - widgets.ipynb
-Untitled.ipynb
-cvtopo.py
+*.ipynb
+*.py
 My Trip To The Pyramids.pptx
+
+!find_pyramids.ipynb
