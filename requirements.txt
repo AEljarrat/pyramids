@@ -1,0 +1,6 @@
+imageio==2.8.*
+matplotlib==3.*
+numpy=1.18.*
+pyqt5==5.14.*
+scikit-image==0.17.*
+scipy==1.4.*
