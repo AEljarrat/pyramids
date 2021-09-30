@@ -3,7 +3,7 @@ Python scripts to segment SEM images of pyramid facets in silicon and measure so
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AEljarrat/pyramids/master?urlpath=/tree/find_pyramids.ipynb) jupyter-notebook
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AEljarrat/pyramids/master) jupyter-lab
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/AEljarrat/pyramids/master?urlpath=/lab) jupyter-lab
 
 The repository can be cloned and installed locally, use `pip install -e .` to obtain the dependencies.
 
