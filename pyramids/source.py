@@ -156,24 +156,24 @@ class FindMaxima():
         
         # Find Local Max I: builds a mask array with the foreground maxima
         foreground_labels, Nlabels = ndi.label(self.foreground)
-        maxima_mask = peak_local_max(
-            image = self.image.data,
+        maxima_ids = peak_local_max(
+            image = self.image.data.copy(),
             labels = foreground_labels,
             num_peaks_per_label=initial_peaks,
-            min_distance=1, 
-            indices=False, )
+            min_distance=1, )
+        maxima_mask = np.zeros_like(self.image.data, dtype=bool)
+        maxima_mask[tuple(maxima_ids.T)] = True
         maxima_mask = ndi.binary_dilation(
             maxima_mask, *args, **kwargs)
         maxima_labels, Nlabels = ndi.label(maxima_mask)
 
         # Find Local Max II: run again find local max for cleanup
-        maxima_mask = peak_local_max(
-            image = self.image.data,
+        self.markers = peak_local_max(
+            image = self.image.data.copy(),
             labels = maxima_labels,
             num_peaks_per_label=1,
-            min_distance=1, 
-            indices=False, )
-        self.markers = np.argwhere(maxima_mask)
+            min_distance=1, )
+        maxima_mask[tuple(self.markers.T)] = True
 
         # Finally use the watershed algorithm to label the basins
         maxima_labels, self.Nlabels = ndi.label(maxima_mask)
@@ -275,13 +275,6 @@ class PyramidTool():
         watershed_labels = self.watershed_image.get_array()
         # mark the pixels at the border
         boundaries = find_boundaries(watershed_labels)
-        # find maxima in the watershed as array
-        watershed_max = peak_local_max(
-            image = self.image.data,
-            labels = watershed_labels,
-            num_peaks_per_label=1,
-            min_distance=1, 
-            indices=False, )
 
         # pyramid angles
         pyangle = np.deg2rad(pyramid_angle)
@@ -301,9 +294,9 @@ class PyramidTool():
             bounds = np.argwhere(label_bounds)
 
             # find the center pixel
-            label_max = watershed_max.copy()
-            label_max[~label_mask] = 0
-            center = np.argwhere(label_max)
+            img = self.image.data.copy()
+            img[watershed_labels!=label] = 0 
+            center = np.unravel_index(np.argmax(img), img.shape)
             self.pyramid_center_coordinates[io, ...] = center 
 
             # get the angles
@@ -354,5 +347,3 @@ class PyramidTool():
         self.pyramid_center_coordinates = npzdata['centers']
         self.pyramid_vertex_coordinates = npzdata['vertices']
         self.update_plot_with_measurements()
-
-    
