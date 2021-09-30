@@ -1,6 +1,7 @@
 matplotlib
 numpy
 ipywidgets
+ipympl
 jupyter_contrib_nbextensions
 scikit-image
 scipy
